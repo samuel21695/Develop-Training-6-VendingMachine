@@ -19,23 +19,23 @@ for (i=0; i < emoticons.length; i++) {
   const makeBtn = document.createElement('button');
   const button = boxOne.children[i]
   boxOne.appendChild(makeBtn);
-  boxOne.children[i].textContent = emoticons[i] + price[i];
-  
-  const toggleButton = boxOne.children[i];
-  toggleButton.addEventListener('click', function() {
+  boxOne.children[i].textContent = emoticons[i] + price[i]; 
+}
 
-    if (toggleButton.style.backgroundColor === '' ) {
-      toggleButton.style.backgroundColor = 'salmon';
-      // b = toggleButton.
-      totalPrice = initialPrice + i
+const toggleButton = document.getElementsByTagName('button')
+for (i=0; i < emoticons.length; i++) {
+  // const toggleButton = boxOne.children[i];
+  toggleButton[i].addEventListener('click', function() {
+    if (toggleButton[i].style.backgroundColor === '' ) {
+      toggleButton[i].style.backgroundColor = 'salmon';
     } else {
-      toggleButton.style.backgroundColor = '';
-
+      toggleButton[i].style.backgroundColor = '';
     }
-    console.log(totalPrice)
-  } 
-  );
+    console.log(i)
   }
+  );
+}
+
 
 // const makeBtn = document.createElement('button')
 // boxOne.appendChild(makeBtn);
