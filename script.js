@@ -23,8 +23,8 @@ for (i=0; i < emoticons.length; i++) {
 }
 
 const toggleButton = document.getElementsByTagName('button')
+// const toggleButton = boxOne.children[i];
 for (i=0; i < emoticons.length; i++) {
-  // const toggleButton = boxOne.children[i];
   toggleButton[i].addEventListener('click', function() {
     if (toggleButton[i].style.backgroundColor === '' ) {
       toggleButton[i].style.backgroundColor = 'salmon';
