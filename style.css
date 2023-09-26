@@ -10,11 +10,13 @@
   flex-direction: row;
 }
 #root>div:nth-child(1) {
+  width:60vw;
+  height: 100vh;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex: 7;
   background-color: darkgrey;
   overflow-y: scroll;
 }
@@ -26,7 +28,26 @@
 }
 
 #root>div:nth-child(2) {
-  flex: 3;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color:lightgray;
+}
+#root>div:nth-child(2)>div {
+  width: 20vw;
+  height: 15vh;
+  font-size: 16px;
+  color: salmon;
+}
+
+#root>div:nth-child(2)>button {
+  width: 12vw;
+  height: 20vh;
+  background-color: salmon;
+  border-radius: 50%
+
 }
 
