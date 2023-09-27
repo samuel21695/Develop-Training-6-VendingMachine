@@ -19,22 +19,18 @@ for (i=0; i < emoticons.length; i++) {
   const makeBtn = document.createElement('button');
   const button = boxOne.children[i]
   boxOne.appendChild(makeBtn);
-  boxOne.children[i].textContent = emoticons[i] + price[i]; 
-}
+  boxOne.children[i].textContent = emoticons[i] + price[i];
 
-const toggleButton = document.getElementsByTagName('button')
-// const toggleButton = boxOne.children[i];
-for (i=0; i < emoticons.length; i++) {
-  toggleButton[i].addEventListener('click', function() {
-    if (toggleButton[i].style.backgroundColor === '' ) {
-      toggleButton[i].style.backgroundColor = 'salmon';
+  const toggleButton = boxOne.children[i];
+  
+  toggleButton.addEventListener('click', function() {
+    if (toggleButton.style.backgroundColor === '' ) {
+      toggleButton.style.backgroundColor = 'salmon';
     } else {
-      toggleButton[i].style.backgroundColor = '';
+      toggleButton.style.backgroundColor = '';
     }
-    console.log(i)
+  });
   }
-  );
-}
 
 
 // const makeBtn = document.createElement('button')
