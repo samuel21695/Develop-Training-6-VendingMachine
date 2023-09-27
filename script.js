@@ -21,17 +21,41 @@ for (i=0; i < emoticons.length; i++) {
   boxOne.appendChild(makeBtn);
   boxOne.children[i].textContent = emoticons[i] + price[i];
 
-  const toggleButton = boxOne.children[i];
+  // const toggleButton = boxOne.children[i];
   
-  toggleButton.addEventListener('click', function() {
-    if (toggleButton.style.backgroundColor === '' ) {
-      toggleButton.style.backgroundColor = 'salmon';
-    } else {
-      toggleButton.style.backgroundColor = '';
-    }
-  });
-  }
+  // toggleButton.addEventListener('click', function() {
+  //   // for (i=0; i< emoticons.length; i++) {
+  //     if (toggleButton.style.backgroundColor === '' ) {
+  //       toggleButton.style.backgroundColor = 'salmon';
+  //       // totalPrice = initialPrice + i
+  //     } else {
+  //       toggleButton.style.backgroundColor = '';
+  //     }
+  //   // }    
+  //   // console.log(totalPrice)
+  // });
+}
 
+  // for (i=0; i < emoticons.length; i++) {
+  //   const makeBtn = document.createElement('button');
+  //   const button = boxOne.children[i]
+  //   boxOne.appendChild(makeBtn);
+  //   boxOne.children[i].textContent = emoticons[i] + price[i]; 
+  // }
+  
+  // const toggleButton = document.getElementsByTagName('button')
+  // // const toggleButton = boxOne.children[i];
+  // for (i=0; i < emoticons.length; i++) {
+  //   toggleButton[i].addEventListener('click', function() {
+  //     if (toggleButton[i].style.backgroundColor === '' ) {
+  //       toggleButton[i].style.backgroundColor = 'salmon';
+  //     } else {
+  //       toggleButton[i].style.backgroundColor = '';
+  //     }
+  //     console.log(i)
+  //   }
+  //   );
+  // }
 
 // const makeBtn = document.createElement('button')
 // boxOne.appendChild(makeBtn);
