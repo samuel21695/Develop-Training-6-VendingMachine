@@ -22,41 +22,16 @@ for (i=0; i < emoticons.length; i++) {
   boxOne.children[i].textContent = emoticons[i] + price[i];
 
   const toggleButton = boxOne.children[i];
-  toggleButton.addEventListener('click', function(e) {
-    console.log(e.target.textContent)
-    for (i=0; i< emoticons.length; i++) {
-      console.log(price[i])
-      if(e.target.textContent === i) {}
-      // if (toggleButton.style.backgroundColor === '' ) {
-      //   toggleButton.style.backgroundColor = 'salmon';  
-      // } else {
-      //   toggleButton.style.backgroundColor = '';
-      // }
-    }    
-  });
-}
-
-
-// for (i=0; i < emoticons.length; i++) {
-  //   const makeBtn = document.createElement('button');
-  //   const button = boxOne.children[i]
-  //   boxOne.appendChild(makeBtn);
-  //   boxOne.children[i].textContent = emoticons[i] + price[i]; 
-  // }
   
-  // const toggleButton = document.getElementsByTagName('button')
-  // // const toggleButton = boxOne.children[i];
-  // for (i=0; i < emoticons.length; i++) {
-  //   toggleButton[i].addEventListener('click', function() {
-  //     if (toggleButton[i].style.backgroundColor === '' ) {
-  //       toggleButton[i].style.backgroundColor = 'salmon';
-  //     } else {
-  //       toggleButton[i].style.backgroundColor = '';
-  //     }
-  //     console.log(i)
-  //   }
-  //   );
-  // }
+  toggleButton.addEventListener('click', function() {
+    if (toggleButton.style.backgroundColor === '' ) {
+      toggleButton.style.backgroundColor = 'salmon';
+    } else {
+      toggleButton.style.backgroundColor = '';
+    }
+  });
+  }
+
 
 // const makeBtn = document.createElement('button')
 // boxOne.appendChild(makeBtn);
@@ -83,7 +58,11 @@ boxtwo.children[0].textContent = "Green Academy Vending Machine";
 
 // * input
 
-const inputT = boxtwo.children[1]
+const inputT = boxtwo.children[1];
+
+inputT.addEventListener('input', function() {
+  
+})
 
 // * button
 const btn = boxtwo.children[2];
