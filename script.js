@@ -23,14 +23,16 @@ for (i=0; i < emoticons.length; i++) {
 
   const toggleButton = boxOne.children[i];
   toggleButton.addEventListener('click', function(e) {
-    // for (i=0; i< emoticons.length; i++) {
-      console.log(e.target)
-      if (toggleButton.style.backgroundColor === '' ) {
-        toggleButton.style.backgroundColor = 'salmon';  
-      } else {
-        toggleButton.style.backgroundColor = '';
-      }
-    // }    
+    console.log(e.target.textContent)
+    for (i=0; i< emoticons.length; i++) {
+      console.log(price[i])
+      if(e.target.textContent === i) {}
+      // if (toggleButton.style.backgroundColor === '' ) {
+      //   toggleButton.style.backgroundColor = 'salmon';  
+      // } else {
+      //   toggleButton.style.backgroundColor = '';
+      // }
+    }    
   });
 }
 
