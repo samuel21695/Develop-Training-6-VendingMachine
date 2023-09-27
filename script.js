@@ -20,19 +20,13 @@ for (i=0; i < emoticons.length; i++) {
   const button = boxOne.children[i]
   boxOne.appendChild(makeBtn);
   boxOne.children[i].textContent = emoticons[i] + price[i];
+
+  const toggleButton = boxOne.children[i];
+  toggleButton.addEventListener('click', function(e) {
+      console.log(e.target)
+  });
 }
 
-const toggleButton = boxOne.children[i];
-toggleButton.addEventListener('click', function() {
-  // for (i=0; i< emoticons.length; i++) {
-    if (toggleButton.style.backgroundColor === '' ) {
-      toggleButton.style.backgroundColor = 'salmon';
-    } else {
-      toggleButton.style.backgroundColor = '';
-    }
-    console.log(i)
-  // }    
-});
 
 // for (i=0; i < emoticons.length; i++) {
   //   const makeBtn = document.createElement('button');
