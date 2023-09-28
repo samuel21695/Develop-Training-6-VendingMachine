@@ -61,7 +61,10 @@ boxtwo.children[0].textContent = "Green Academy Vending Machine";
 const inputT = boxtwo.children[1];
 
 inputT.addEventListener('input', function() {
-  
+
+  // if(inputT.value ===) {
+  //   console.log('yes')
+  // }
 })
 
 // * button
