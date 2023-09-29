@@ -23,6 +23,7 @@ for (i=0; i < emoticons.length; i++) {
 
   const toggleButton = boxOne.children[i];
   
+  // * backgroundColor change when 'click'
   toggleButton.addEventListener('click', function() {
     if (toggleButton.style.backgroundColor === '' ) {
       toggleButton.style.backgroundColor = 'salmon';
@@ -32,6 +33,10 @@ for (i=0; i < emoticons.length; i++) {
   });
   }
 
+// * console textContent of the button when click.
+const toggleButtonTwo = document.getElementsByTagName('button')
+for (i=0;)
+console.log(toggleButtonTwo.textContent)
 
 // const makeBtn = document.createElement('button')
 // boxOne.appendChild(makeBtn);
