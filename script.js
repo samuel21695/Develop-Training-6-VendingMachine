@@ -13,13 +13,13 @@ const price = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13,14, 15, 16, 17 , 18, 19
 
 // * create emoji items && backgroundColor change
 
-const initialPrice = 0
+const totalItemPrice = 0
 
 for (i=0; i < emoticons.length; i++) {
   const makeBtn = document.createElement('button');
   const button = boxOne.children[i]
   boxOne.appendChild(makeBtn);
-  boxOne.children[i].textContent = emoticons[i] + price[i];
+  boxOne.children[i].textContent =  price[i];
 
   const toggleButton = boxOne.children[i];
   
@@ -27,6 +27,9 @@ for (i=0; i < emoticons.length; i++) {
   toggleButton.addEventListener('click', function() {
     if (toggleButton.style.backgroundColor === '' ) {
       toggleButton.style.backgroundColor = 'salmon';
+      // itemPrice = parseInt(toggleButton.textContent)
+      // totalItemPrice += itemPrice
+      console.log(totalItemPrice)
     } else {
       toggleButton.style.backgroundColor = '';
     }
