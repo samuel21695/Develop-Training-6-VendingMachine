@@ -33,17 +33,13 @@ for (i=0; i < emoticons.length; i++) {
   });
   }
 
-// * console textContent of the button when click.
-const toggleButtonTwo = document.getElementsByTagName('button')
-for (i=0;)
-console.log(toggleButtonTwo.textContent)
+  
+  // const makeBtn = document.createElement('button')
+  // boxOne.appendChild(makeBtn);
+  // btn = boxOne.children[0]
+  // console.dir(btn)
 
-// const makeBtn = document.createElement('button')
-// boxOne.appendChild(makeBtn);
-// btn = boxOne.children[0]
-// console.dir(btn)
-
-// * box 2
+  // * box 2
 // * box 2 elements
 const boxtwo = document.getElementById('root').children[1];
 console.dir(boxtwo);
@@ -62,21 +58,24 @@ boxtwo.appendChild(makeBtn);
 boxtwo.children[0].textContent = "Green Academy Vending Machine";
 
 // * input
+// * console textContent of the button when click.
 
 const inputT = boxtwo.children[1];
 
 inputT.addEventListener('input', function() {
 
+  console.log("값이 입력되었습니다.")
+  
   // if(inputT.value ===) {
-  //   console.log('yes')
-  // }
+    //   console.log('yes')
+    // }
 })
 
 // * button
 const btn = boxtwo.children[2];
 btn.textContent = "버튼"
 // btn.addEventListener("click", function() {
-// console.log(inputT.value)})
+  // console.log(inputT.value)})
 
 btn.addEventListener("click", function() {
   // console.log(a)
