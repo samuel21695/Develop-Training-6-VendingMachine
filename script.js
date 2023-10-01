@@ -63,12 +63,11 @@ boxtwo.children[0].textContent = "Green Academy Vending Machine";
 const inputT = boxtwo.children[1];
 
 inputT.addEventListener('input', function() {
-
-  console.log("값이 입력되었습니다.")
-  
-  // if(inputT.value ===) {
-    //   console.log('yes')
-    // }
+  if (isNaN(inputT.value) === true) {
+    console.log("숫자만 입력해주세요.")
+    } else {
+      console.log('값을 입력했습니다.')
+  }
 })
 
 // * button
