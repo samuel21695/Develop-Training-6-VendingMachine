@@ -23,13 +23,12 @@ for (i=0; i < emoticons.length; i++) {
 
   const toggleButton = boxOne.children[i];
   
-  // * backgroundColor change when 'click'
+  // * backgroundColor change when 'click' && ItemPrice
   toggleButton.addEventListener('click', function() {
     if (toggleButton.style.backgroundColor === '' ) {
       toggleButton.style.backgroundColor = 'salmon';
-      // itemPrice = parseInt(toggleButton.textContent)
-      // totalItemPrice += itemPrice
-      console.log(totalItemPrice)
+      itemPrice = parseInt(toggleButton.textContent)
+      console.log(itemPrice)
     } else {
       toggleButton.style.backgroundColor = '';
     }
